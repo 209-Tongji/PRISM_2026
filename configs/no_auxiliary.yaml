@@ -1,0 +1,5 @@
+_base: prism.yaml
+sdpo:
+  dpo_aux_alpha: 0.0
+train:
+  run_name: no_auxiliary_seed42

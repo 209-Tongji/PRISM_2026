@@ -1,0 +1,10 @@
+# Install a PyTorch build suitable for your CUDA runtime first.
+torch>=2.5
+transformers>=4.57.1,<5
+peft>=0.17,<1
+accelerate>=1.0,<2
+Pillow>=10
+numpy>=1.26
+scipy>=1.11
+PyYAML>=6
+requests>=2.31

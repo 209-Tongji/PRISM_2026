@@ -1,0 +1,6 @@
+_base: prism.yaml
+sdpo:
+  teacher:
+    mode: frozen
+train:
+  run_name: frozen_teacher_seed42

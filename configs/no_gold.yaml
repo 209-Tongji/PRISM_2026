@@ -1,0 +1,7 @@
+# L3 diagnostic instances; no full gold JSON or group-success solution in prompt.
+_base: prism.yaml
+feedback:
+  mode: level
+  level: L3
+train:
+  run_name: no_gold_seed42

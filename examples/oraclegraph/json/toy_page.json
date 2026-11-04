@@ -1,0 +1,96 @@
+{
+  "image_id": "toy_page",
+  "adversarial_scenario": [
+    "NORMAL"
+  ],
+  "metadata": {
+    "source": "constructed_example",
+    "width": 320,
+    "height": 240
+  },
+  "oracle_graph": {
+    "nodes": [
+      {
+        "node_id": "n_main1",
+        "type": "MAIN_TEXT",
+        "polygon": [
+          235,
+          40,
+          280,
+          40,
+          280,
+          205,
+          235,
+          205
+        ],
+        "text": "A",
+        "attributes": {}
+      },
+      {
+        "node_id": "n_main2",
+        "type": "MAIN_TEXT",
+        "polygon": [
+          125,
+          40,
+          170,
+          40,
+          170,
+          205,
+          125,
+          205
+        ],
+        "text": "B",
+        "attributes": {}
+      },
+      {
+        "node_id": "n_interlinear1",
+        "type": "INTERLINEAR_ANNOTATION",
+        "polygon": [
+          185,
+          45,
+          210,
+          45,
+          210,
+          125,
+          185,
+          125
+        ],
+        "text": "note",
+        "attributes": {}
+      },
+      {
+        "node_id": "n_seal1",
+        "type": "RED_SEAL_STAMP",
+        "polygon": [
+          145,
+          150,
+          185,
+          150,
+          185,
+          190,
+          145,
+          190
+        ],
+        "text": "seal",
+        "attributes": {}
+      }
+    ],
+    "edges": [
+      {
+        "source": "n_main1",
+        "target": "n_main2",
+        "type": "READS_AFTER"
+      },
+      {
+        "source": "n_interlinear1",
+        "target": "n_main1",
+        "type": "ANNOTATES"
+      },
+      {
+        "source": "n_seal1",
+        "target": "n_main2",
+        "type": "OVERLAPS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+_base: prism.yaml
+train:
+  run_name: dpo_seed42
+  algo: dpo
+  lr: 1.0e-6
+  warmup_steps: 5
+  dpo_beta: 0.1
+feedback:
+  mode: diff

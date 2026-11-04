@@ -1,0 +1,6 @@
+_base: dpo.yaml
+train:
+  run_name: simpo_seed42
+  algo: dpo_simpo
+  simpo_beta: 2.5
+  simpo_gamma: 0.5

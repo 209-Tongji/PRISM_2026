@@ -1,0 +1,9 @@
+_base: base.yaml
+train:
+  run_name: sft_seed42
+  max_steps: 1000
+  lr: 2.0e-5
+  lr_schedule: cosine
+  warmup_steps: 50
+  log_interval: 10
+  save_interval: 200

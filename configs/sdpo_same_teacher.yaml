@@ -1,0 +1,7 @@
+# Same teacher inputs as PRISM; isolates reward weighting and auxiliary preference.
+_base: prism.yaml
+sdpo:
+  reward_weighted: false
+  dpo_aux_alpha: 0.0
+train:
+  run_name: sdpo_same_teacher_seed42

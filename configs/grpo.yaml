@@ -1,0 +1,7 @@
+# Group-normalized policy-gradient control; HF rollouts omit old log probabilities.
+_base: dpo.yaml
+rollout:
+  group_size: 4
+train:
+  run_name: grpo_seed42
+  algo: grpo

@@ -1,0 +1,3 @@
+_base: base.yaml
+model:
+  resume_adapter: ${PRISM_SFT_ADAPTER:-outputs/sft_seed42/ckpt_step001000/student}

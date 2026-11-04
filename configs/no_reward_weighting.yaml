@@ -1,0 +1,5 @@
+_base: prism.yaml
+sdpo:
+  reward_weighted: false
+train:
+  run_name: no_reward_weighting_seed42

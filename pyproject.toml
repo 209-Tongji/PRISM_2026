@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prism-vlm"
+version = "0.1.0"
+description = "PRISM: reward-aware self-distillation for multimodal document graph parsing"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+prism-train = "sdpo_vlm.trainer.trainer:main"
+prism-sft = "sdpo_vlm.trainer.trainer_sft:main"
+prism-baseline = "sdpo_vlm.trainer.trainer_baseline:main"
+prism-eval = "sdpo_vlm.tools.eval_val:main"
+prism-score = "sdpo_vlm.tools.score_predictions:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["sdpo_vlm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

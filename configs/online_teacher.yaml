@@ -1,0 +1,6 @@
+_base: prism.yaml
+sdpo:
+  teacher:
+    mode: online
+train:
+  run_name: online_teacher_seed42

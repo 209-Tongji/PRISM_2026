@@ -1,0 +1,6 @@
+# Keep group-success/gold reference selection, remove diagnostic report text.
+_base: prism.yaml
+feedback:
+  mode: auto_no_dgr
+train:
+  run_name: no_dgr_seed42
